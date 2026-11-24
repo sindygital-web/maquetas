@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Maqueta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link id="fuentes" rel="stylesheet" href="">
+<link rel="stylesheet" href="../plantilla/estilo.css">
+</head>
+<body>
+<div class="aviso-maqueta">Maqueta de muestra hecha por Sindygital · así podría verse tu web (versión en inglés para turistas; también va en español)</div>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a href="#inicio" class="marca"><span class="logo-letra" id="logoLetra"></span><span id="marcaNombre"></span></a>
+    <nav class="menu" id="menu">
+      <a href="#servicios">Tours</a><a href="#nosotros">About</a><a href="#galeria">Gallery</a><a href="#opiniones">Reviews</a><a href="#contacto">Contact</a>
+    </nav>
+    <a class="btn btn-chico" id="ctaTop" target="_blank" rel="noopener">Book now</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap hero-in">
+      <div class="hero-txt">
+        <p class="etiqueta" id="heroEtiqueta"></p>
+        <h1 id="heroTitulo"></h1>
+        <p class="bajada" id="heroBajada"></p>
+        <div class="botones">
+          <a class="btn" id="ctaHero" target="_blank" rel="noopener"></a>
+          <a class="btn btn-borde" href="#servicios">See tours</a>
+        </div>
+        <ul class="sellos" id="sellos"></ul>
+      </div>
+      <div class="hero-foto" id="heroFoto"></div>
+    </div>
+  </section>
+
+  <section id="servicios" class="seccion">
+    <div class="wrap">
+      <p class="etiqueta">Our tours</p>
+      <h2 id="serviciosTitulo"></h2>
+      <div class="grilla-servicios" id="servicios-lista"></div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="seccion seccion-suave">
+    <div class="wrap dos-col">
+      <div class="nos-foto" id="nosFoto"></div>
+      <div>
+        <p class="etiqueta">About us</p>
+        <h2 id="nosTitulo"></h2>
+        <p id="nosTexto"></p>
+        <ul class="pasos" id="pasos"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="seccion">
+    <div class="wrap">
+      <p class="etiqueta">Gallery</p>
+      <h2>Life on board</h2>
+      <div class="galeria" id="galeria-lista"></div>
+      <p class="centro"><a class="link-ig" id="linkIg" target="_blank" rel="noopener"></a></p>
+    </div>
+  </section>
+
+  <section id="opiniones" class="seccion seccion-suave">
+    <div class="wrap">
+      <p class="etiqueta">Reviews</p>
+      <h2>What our guests say</h2>
+      <div class="grilla-opiniones" id="opiniones-lista"></div>
+      <p class="nota-maqueta">En la web real van las reseñas reales de Google y de los huéspedes.</p>
+    </div>
+  </section>
+
+  <section id="contacto" class="seccion">
+    <div class="wrap dos-col">
+      <div>
+        <p class="etiqueta">Contact</p>
+        <h2 id="contactoTitulo"></h2>
+        <ul class="datos" id="datos"></ul>
+        <a class="btn" id="ctaContacto" target="_blank" rel="noopener"></a>
+      </div>
+      <div class="mapa"><iframe id="mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa"></iframe></div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="wrap"><span id="pieNombre"></span> · <span id="pieZona"></span><br><small>Maqueta de muestra hecha por Sindygital · instagram.com/sindygital</small></div>
+</footer>
+
+<a class="wa-flotante" id="waFlotante" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7a10.7 10.7 0 0 1-5.5-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+
+<script src="config.js"></script>
+<script src="../plantilla/rubros.js"></script>
+<script src="../plantilla/motor.js"></script>
+<script>
+(function(){var w='https://wa.me/message/5TLBQJOIBZWGA1';['ctaTop','ctaHero','ctaContacto','waFlotante'].forEach(function(id){var e=document.getElementById(id);if(e)e.href=w;});
+var l=document.getElementById('linkIg');if(l)l.textContent='Follow us on Instagram @kabuki_sailing →';
+document.querySelectorAll('#datos li').forEach(function(li){if(/WhatsApp/.test(li.textContent))li.lastChild.textContent='WhatsApp: book in one tap';});})();
+</script>
+</body>
+</html>
