@@ -1,0 +1,102 @@
+/* Textos y estilo base por rubro. La config de cada prospecto pisa lo que quiera.
+   {nombre} y {zona} se reemplazan solos. */
+window.RUBROS = {
+  estetica: {
+    colores: ['#be185d', '#500724', '#fdf2f8'], fuentes: ['Playfair Display', 'Lato'],
+    etiqueta: 'Centro de estética en {zona}',
+    titulo: 'Tu momento de cuidarte, con resultados que se notan',
+    bajada: 'Tratamientos faciales y corporales con profesionales, productos de primera y turnos que se adaptan a vos.',
+    cta: 'Reservar turno', sellos: ['Turnos online', 'Profesionales certificadas', 'Productos premium'],
+    serviciosTitulo: 'Tratamientos para cada necesidad',
+    servicios: [['✨', 'Limpieza facial profunda', 'Piel luminosa y sin impurezas desde la primera sesión.'], ['💆‍♀️', 'Masajes descontracturantes', 'Relajación total para soltar el estrés de la semana.'], ['🌿', 'Tratamientos corporales', 'Reductores, reafirmantes y drenaje linfático.'], ['💅', 'Manos y pies', 'Manicuría, pedicuría y esmaltado semipermanente.']],
+    nosTitulo: 'Un espacio pensado para vos',
+    nosTexto: 'En {nombre} creemos que cuidarse no es un lujo. Te recibimos en un lugar cálido, con atención personalizada y protocolos de higiene en cada turno.',
+    pasos: ['Escribinos por WhatsApp y elegí tu turno.', 'Te hacemos una evaluación sin cargo.', 'Disfrutás tu tratamiento y ves los resultados.'],
+    opiniones: [['Excelente atención, salí renovada. Ya reservé el próximo turno.', 'Carla M.'], ['Súper profesionales y el lugar es hermoso. Lo recomiendo.', 'Luciana P.'], ['Los resultados se notaron desde la primera sesión.', 'Valeria G.']],
+    contactoTitulo: 'Reservá tu turno hoy', mensaje: '¡Hola {nombre}! Quiero reservar un turno 🙂'
+  },
+  gastronomia: {
+    colores: ['#c2410c', '#431407', '#fff7ed'], fuentes: ['Playfair Display', 'Lato'],
+    etiqueta: 'Gastronomía en {zona}',
+    titulo: 'Sabores caseros que te hacen volver',
+    bajada: 'Comida rica, hecha en el día, para comer acá, llevar o pedir por delivery.',
+    cta: 'Hacer un pedido', sellos: ['Delivery y take away', 'Hecho en el día', 'Pedidos por WhatsApp'],
+    serviciosTitulo: 'Nuestra carta',
+    servicios: [['🍕', 'Especialidades de la casa', 'Las recetas que nos hicieron conocidos en el barrio.'], ['🥗', 'Opciones livianas', 'Ensaladas, wraps y platos para todos los días.'], ['🍰', 'Postres y pastelería', 'Tortas, tartas y dulces para cerrar con todo.'], ['🎉', 'Eventos y catering', 'Pedidos especiales para cumpleaños y reuniones.']],
+    nosTitulo: 'Cocinamos como en casa',
+    nosTexto: '{nombre} nació con una idea simple: comida rica, bien servida y a buen precio. Usamos ingredientes frescos y cocinamos todo en el día.',
+    pasos: ['Mirá la carta y elegí lo que más te guste.', 'Hacé tu pedido por WhatsApp.', 'Retiralo o recibilo en tu casa.'],
+    opiniones: [['Todo riquísimo y llegó calentito. Ya es un clásico de los viernes.', 'Martín R.'], ['Las porciones son enormes y la atención, un diez.', 'Sofía L.'], ['El mejor lugar de la zona, siempre vuelvo.', 'Diego F.']],
+    contactoTitulo: 'Hacé tu pedido', mensaje: '¡Hola {nombre}! Quiero hacer un pedido 🙂'
+  },
+  salud: {
+    colores: ['#0e7490', '#164e63', '#ecfeff'], fuentes: ['Playfair Display', 'Lato'],
+    etiqueta: 'Consultorio en {zona}',
+    titulo: 'Atención profesional, cercana y sin vueltas',
+    bajada: 'Turnos rápidos, consultas presenciales y online, y un seguimiento real de tu tratamiento.',
+    cta: 'Pedir turno', sellos: ['Turnos en 48 h', 'Consultas online', 'Obras sociales'],
+    serviciosTitulo: 'Especialidades y servicios',
+    servicios: [['🩺', 'Consulta y diagnóstico', 'Evaluación completa y un plan claro desde el primer turno.'], ['📋', 'Estudios y controles', 'Chequeos periódicos para estar tranquilo.'], ['💻', 'Consultas online', 'Atención por videollamada desde donde estés.'], ['🤝', 'Seguimiento', 'Te acompañamos en cada etapa del tratamiento.']],
+    nosTitulo: 'Tu salud en buenas manos',
+    nosTexto: 'En {nombre} trabajamos con un enfoque humano: te escuchamos, te explicamos todo y armamos juntos el mejor camino.',
+    pasos: ['Pedí tu turno por WhatsApp.', 'Te atendemos en el consultorio u online.', 'Hacemos el seguimiento de tu tratamiento.'],
+    opiniones: [['Me explicaron todo con mucha paciencia. Muy recomendable.', 'Andrea S.'], ['Conseguí turno rápido y la atención fue excelente.', 'Pablo D.'], ['Profesionales y muy humanos. Gracias por todo.', 'Mariela C.']],
+    contactoTitulo: 'Pedí tu turno', mensaje: '¡Hola {nombre}! Quisiera pedir un turno.'
+  },
+  gimnasio: {
+    colores: ['#ea580c', '#0f172a', '#fff7ed'], fuentes: ['Oswald', 'Lato'],
+    etiqueta: 'Entrenamiento en {zona}',
+    titulo: 'Entrená con un plan y con gente que te empuja',
+    bajada: 'Clases grupales, musculación y profes que te acompañan para que veas resultados de verdad.',
+    cta: 'Quiero mi clase de prueba', sellos: ['Clase de prueba gratis', 'Profes certificados', 'Abierto de 7 a 22 h'],
+    serviciosTitulo: 'Elegí cómo entrenar',
+    servicios: [['🏋️', 'Musculación', 'Sala equipada y rutinas personalizadas.'], ['🔥', 'Funcional y cross', 'Clases intensas en grupos reducidos.'], ['🚴', 'Spinning', 'Cardio con buena música y mucha energía.'], ['🧘', 'Pilates y movilidad', 'Fuerza, postura y flexibilidad.']],
+    nosTitulo: 'Más que un gimnasio',
+    nosTexto: 'En {nombre} cada alumno tiene un objetivo y un profe que lo sigue de cerca. Ambiente buena onda, sin importar tu nivel.',
+    pasos: ['Escribinos y agendá tu clase de prueba.', 'Hacemos una evaluación inicial.', 'Te armamos el plan y empezás a entrenar.'],
+    opiniones: [['Los profes son geniales y el ambiente es muy bueno.', 'Nicolás B.'], ['Bajé 8 kilos en 4 meses con el plan que me armaron.', 'Florencia T.'], ['Las clases de funcional son lo más.', 'Gonzalo M.']],
+    contactoTitulo: 'Agendá tu clase de prueba', mensaje: '¡Hola {nombre}! Quiero agendar una clase de prueba 💪'
+  },
+  hogar: {
+    colores: ['#1d4ed8', '#0f172a', '#eff6ff'], fuentes: ['Montserrat', 'Lato'],
+    etiqueta: 'Servicios en {zona} y alrededores',
+    titulo: 'Soluciones rápidas y garantizadas para tu casa',
+    bajada: 'Presupuesto sin cargo, trabajos prolijos y atención en el día para urgencias.',
+    cta: 'Pedir presupuesto', sellos: ['Presupuesto sin cargo', 'Urgencias en el día', 'Trabajos garantizados'],
+    serviciosTitulo: 'Lo que resolvemos',
+    servicios: [['🔧', 'Reparaciones', 'Arreglos rápidos y con materiales de calidad.'], ['⚡', 'Instalaciones', 'Instalaciones nuevas según normas vigentes.'], ['🚨', 'Urgencias', 'Respondemos en el día cuando más lo necesitás.'], ['🏠', 'Mantenimiento', 'Planes para casas, comercios y consorcios.']],
+    nosTitulo: 'Trabajo prolijo y de confianza',
+    nosTexto: '{nombre} trabaja en {zona} con años de experiencia. Llegamos a horario, dejamos todo limpio y te damos garantía por escrito.',
+    pasos: ['Contanos qué necesitás por WhatsApp (con fotos si podés).', 'Te pasamos el presupuesto sin cargo.', 'Coordinamos el día y resolvemos.'],
+    opiniones: [['Vino en el día y lo resolvió rapidísimo. Muy prolijo.', 'Jorge A.'], ['Precio justo y trabajo impecable. Lo vuelvo a llamar seguro.', 'Silvia R.'], ['Muy responsable y puntual. Recomendado.', 'Hernán V.']],
+    contactoTitulo: 'Pedí tu presupuesto sin cargo', mensaje: '¡Hola {nombre}! Quiero pedir un presupuesto.'
+  },
+  comercio: {
+    colores: ['#7c3aed', '#2e1065', '#f5f3ff'], fuentes: ['Playfair Display', 'Lato'],
+    etiqueta: 'Tienda en {zona} · envíos a todo el país',
+    titulo: 'Productos que te enamoran, a un mensaje de distancia',
+    bajada: 'Elegí, consultá y comprá fácil: envíos, retiro en el local y todos los medios de pago.',
+    cta: 'Ver productos y comprar', sellos: ['Envíos a todo el país', 'Cuotas sin interés', 'Cambios sin vueltas'],
+    serviciosTitulo: 'Nuestras categorías',
+    servicios: [['🛍️', 'Novedades', 'Lo último que llegó, en cantidades limitadas.'], ['⭐', 'Más vendidos', 'Los favoritos de nuestros clientes.'], ['🎁', 'Para regalar', 'Ideas listas, con envoltorio de regalo.'], ['🏷️', 'Ofertas', 'Precios especiales por tiempo limitado.']],
+    nosTitulo: 'Elegidos con cariño',
+    nosTexto: '{nombre} es una marca de {zona} que elige cada producto pensando en vos. Atención personalizada antes y después de tu compra.',
+    pasos: ['Elegí lo que te gusta.', 'Escribinos para confirmar stock y envío.', 'Pagás como prefieras y lo recibís.'],
+    opiniones: [['Llegó rapidísimo y súper bien presentado.', 'Camila N.'], ['Excelente calidad y atención. Ya hice mi segunda compra.', 'Romina K.'], ['Me ayudaron a elegir el regalo perfecto.', 'Julieta A.']],
+    contactoTitulo: 'Comprá o consultá', mensaje: '¡Hola {nombre}! Quiero consultar por un producto.'
+  },
+  profesional: {
+    colores: ['#334155', '#0f172a', '#f8fafc'], fuentes: ['Playfair Display', 'Lato'],
+    etiqueta: 'Estudio profesional en {zona}',
+    titulo: 'Asesoramiento claro para decidir con tranquilidad',
+    bajada: 'Te explicamos todo en simple, con respuestas rápidas y seguimiento de cada caso.',
+    cta: 'Agendar una consulta', sellos: ['Primera consulta orientativa', 'Atención online', 'Respuesta en 24 h'],
+    serviciosTitulo: 'Áreas de trabajo',
+    servicios: [['📑', 'Asesoramiento', 'Te orientamos para que sepas exactamente qué hacer.'], ['⚖️', 'Gestión y trámites', 'Nos ocupamos de todo, de principio a fin.'], ['💼', 'Empresas y emprendedores', 'Acompañamiento mensual para tu negocio.'], ['🖥️', 'Consultas online', 'Atención por videollamada sin moverte de tu casa.']],
+    nosTitulo: 'Experiencia y cercanía',
+    nosTexto: 'En {nombre} cada cliente tiene atención directa. Trabajamos con transparencia, honorarios claros y comunicación constante.',
+    pasos: ['Escribinos y contanos tu caso.', 'Agendamos una consulta.', 'Te proponemos un plan y lo llevamos adelante.'],
+    opiniones: [['Me explicaron todo con claridad y resolvieron rápido.', 'Ricardo P.'], ['Muy profesionales y siempre disponibles.', 'Natalia H.'], ['Excelente acompañamiento en todo el proceso.', 'Esteban G.']],
+    contactoTitulo: 'Agendá tu consulta', mensaje: '¡Hola {nombre}! Quisiera hacer una consulta.'
+  }
+};
